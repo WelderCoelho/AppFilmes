@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Detalhes_filme">
+
+
+    <ImageView
+        android:id="@+id/img_detalhe"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_detalhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_arrow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_play_video"
+        app:layout_constraintStart_toStartOf="@id/img_detalhe"
+        app:layout_constraintEnd_toEndOf="@id/img_detalhe"
+        app:layout_constraintTop_toTopOf="@id/img_detalhe"
+        app:layout_constraintBottom_toBottomOf="@id/img_detalhe"/>
+
+    <TextView
+        android:id="@+id/nomeFilmeDetalhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Era do gelo"
+        app:layout_constraintTop_toBottomOf="@id/img_detalhe"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/textoFilmeDetalhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Era do gelo"
+        app:layout_constraintTop_toBottomOf="@id/nomeFilmeDetalhe"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/ElencoFilmeDetalhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Elenco:jhlkjhoijgh"
+        app:layout_constraintTop_toBottomOf="@id/textoFilmeDetalhe"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
